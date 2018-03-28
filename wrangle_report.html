@@ -11783,6 +11783,7 @@ div#notebook {
 </ul>
 <h2 id="Assessing-Data">Assessing Data<a class="anchor-link" href="#Assessing-Data">&#182;</a></h2><p><strong><em>Archive</em></strong></p>
 <ul>
+<li>tweet_id has to be a string</li>
 <li>row can contain non-original tweets? (Non-null value in the following columns : in_reply_to_status_id, in_reply_to_user_id, retweeted_status_id, retweeted_status_user_id, retweeted_statud_timestamp)</li>
 <li>the column source contains html residues</li>
 <li>doggo, floofer, pupper and puppo represents one variable and due to tidiness rule have to be one column</li>
@@ -11795,11 +11796,17 @@ div#notebook {
 <li>639 double links in expanded_urls</li>
 <li>23 denominators not on 10</li>
 <li>440 numerators under 10</li>
+<li>all numerators with decimal are false in rating_numerator column</li>
 </ul>
 <p><strong><em>Image</em></strong></p>
 <ul>
+<li>tweet_id has to be a string</li>
 <li>p1, p2, p3 have inconsistent writing</li>
 <li>in 324 rows no dogs is recognized</li>
+</ul>
+<p><strong><em>Info</em></strong></p>
+<ul>
+<li>id has to be a string</li>
 </ul>
 <p><strong><em>Global</em></strong></p>
 <ul>
@@ -11814,6 +11821,7 @@ div#notebook {
 </li>
 <li>Suppress html residues in source</li>
 <li>Convert timestamp to datetime</li>
+<li>Convert tweet_id to string</li>
 <li>Suppress stop words in name</li>
 <li>Names in name column in lower case</li>
 <li>Change 'None' string by NaN<ul>
@@ -11828,7 +11836,7 @@ div#notebook {
 </li>
 <li>fixing numerator and denominator<ul>
 <li>validate when no problem of scrapping (irrationnal)</li>
-<li>change when scrapping error</li>
+<li>change when scrapping error (including decimal)</li>
 </ul>
 </li>
 <li>dogs stage<ul>
@@ -11839,11 +11847,16 @@ div#notebook {
 </ul>
 <p><strong><em>Image</em></strong></p>
 <ul>
+<li>convert tweet_id to string</li>
 <li>p1, p2, p3 have inconsistent writing, fixed</li>
 <li>in 324 rows no dogs is recognized<ul>
 <li>to observe impact = tweet sympathetic, so just a column</li>
 </ul>
 </li>
+</ul>
+<p><strong><em>Info</em></strong></p>
+<ul>
+<li>convert id to string</li>
 </ul>
 <p><strong><em>Global</em></strong></p>
 <ul>
