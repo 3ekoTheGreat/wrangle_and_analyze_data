@@ -1,2 +1,29 @@
-# wrangle_and_analyze_data
-Submission from the Udacity's Data Analyst Nano-Dedree: Real-world data rarely comes clean. Using Python and its libraries, you will gather data from a variety of sources and in a variety of formats, assess its quality and tidiness, then clean it. This is called data wrangling. You will document your wrangling efforts in a Jupyter Notebook, plus showcase them through analyses and visualizations using Python (and its libraries) and/or SQL.
+# P6. We Rate Dogs Retweets
+This repository contains my submission for Udacity's project Wrangle and Analyze Data .
+
+## Overview
+
+Sharing tweets is one of the main keys for growing a twitter account.
+
+Therefore, we use the data at our disposal ***to get a better understing on what influence sharing***, as time (hours, days), kind of dogs (breeds, stages) and rating, in order to give some insight to the marketing team.
+
+You can see a summary of the data wrangling and cleaning:[wrangle_report](https://github.com/pierreconreaux/wrangle_and_analyze_data/blob/master/wrangle_report.ipynb)
+
+You can see a summary of the explaration: [act_report](https://github.com/pierreconreaux/wrangle_and_analyze_data/blob/master/act_report.ipynb)
+
+See all code: [wrangle_act](https://github.com/pierreconreaux/wrangle_and_analyze_data/blob/master/wrangle_act.ipynb)
+
+## Libraries
+- pandas
+- NumPy
+- requests
+- tweepy
+- json
+- os
+- sys
+- seaborn
+- matplotlib
+- sklearn
+- datetime
+- config
+- re
